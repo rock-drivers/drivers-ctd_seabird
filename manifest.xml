@@ -1,0 +1,18 @@
+<package>
+  <description brief="Driver for Sea-Bird CTDs">
+  This package contains a driver for Sea-Bird CTDs. In first stage it only parses the ASCII outputformat 3. No further interaction is implemented.
+  </description>
+  <author>Jens Renken/renken@marum.de</author>
+  <license></license>
+  <url>http://www.marum.de</url>
+  <logo>http://</logo>
+  <!--
+   To add any dependencies use the depend tag
+  <depend package="dummy-dependency-0" />
+	...
+  <depend package="dummy-dependency-n-1" />
+  <depend package="dummy-dependency-n" />
+  -->
+  <depend package="base/types" />
+  <depend package="drivers/iodrivers_base" />
+</package>
