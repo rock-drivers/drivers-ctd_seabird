@@ -1,10 +1,17 @@
 #include <iostream>
-#include <ctd_seabird/Dummy.hpp>
+#include <ctd_seabird/Driver.hpp>
 
 int main(int argc, char** argv)
 {
-	dummy_project::DummyClass dummyClass;
-	dummyClass.welcome();
+    ctd_seabird::Driver driver;
+    driver.open("udpserver://4949");
+
+    while (true) {
+        driver.collectPeriodicData();
+        ctd_seabird::CtdData data = driver.getData();
+        std::cout << data.time.toString() << "    ";
+        driver.dumpData();
+    }
 
 	return 0;
 }
