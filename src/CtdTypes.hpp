@@ -5,8 +5,8 @@
  *      Author: jrenken
  */
 
-#ifndef CTD_SEABIRD_TYPES_HPP
-#define CTD_SEABIRD__TYPES_HPP
+#ifndef CTD_SEABIRD_CTDTYPES_HPP
+#define CTD_SEABIRD_CTDTYPES_HPP
 
 #include <base/time.h>
 
@@ -26,4 +26,4 @@ namespace ctd_seabird {
 }
 
 
-#endif /* CTD_SEABIRD_TYPES_HPP */
+#endif /* CTD_SEABIRD_CTDTYPES_HPP */
