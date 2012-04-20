@@ -91,6 +91,7 @@ std::string Driver::read(int timeout)
 
 int Driver::extractPacket(const uint8_t *buffer, size_t buffer_size) const
 {
+//    std::cout << "ctd_seabird: " << iodrivers_base::Driver::printable_com(buffer, buffer_size) << std::endl;
 
     for (size_t i = 0; i < buffer_size; i++) {
         if (buffer[i] == '\n') {
