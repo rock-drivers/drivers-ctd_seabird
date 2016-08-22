@@ -8,7 +8,7 @@
 #ifndef CTD_SEABIRD_CTDTYPES_HPP
 #define CTD_SEABIRD_CTDTYPES_HPP
 
-#include <base/time.h>
+#include <base/Time.hpp>
 
 namespace ctd_seabird {
     // namespace ctd_seabird
